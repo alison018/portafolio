@@ -39,6 +39,7 @@ Este es un proyecto de encriptación y desencriptación de texto creado con HTML
         ├── coding.png
         └── error-page.png
 
+```
 ## Créditos
 
 Las imágenes utilizadas en este proyecto son de:
