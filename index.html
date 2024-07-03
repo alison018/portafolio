@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Encriptador y Desencriptador de Texto</h1>
+    </header>
+    <main>
+        <div class="column">
+            <textarea class="form-control" id="form-control" rows="4" placeholder="ingresa el texto que quieres encriptar:"></textarea>
+            <button type="button" class="btn btn-info" onclick="encriptar()">Encriptar</button>
+            <button type="button" class="btn btn-dark" onclick="desencriptar()">Desencriptar</button>
+        </div>
+        <div class="column right-column" id="image-container">
+            <img class="image" id="image" src="/Assets/img/coding.png" alt="Esperando mensaje">
+            <p id="waiting-text" class="waiting-text">Tan pronto como ingreses el texto que deseas encriptar, te ayudaré con ello.</p>
+            <textarea id="output-text" rows="4" readonly></textarea>
+            <button type="button" class="btn btn-dark" id="copy-button" onclick="copiar()">Copia para encriptar o desencriptar </button>
+           <div class="center-container">
+        <img class="no-input-image" id="no-input-image" src="/Assets/img/error-page.png" alt="No mensaje">
+    </div>
+    <p id="no-input-text" class="waiting-text">No has ingresado ningún mensaje.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hecho con amor por Alison Acosta. Todos los derechos reservados.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
